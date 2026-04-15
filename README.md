@@ -77,9 +77,25 @@ This project follows a structured data science lifecycle:
 - [x] **Phase 3: Preprocessing**
     - Feature standardization using `StandardScaler`.
     - Splitting data into Training and Testing sets.
-- [ ] **Phase 4: Predictive Modeling**
+- [x] **Phase 4: Predictive Modeling**
     - Training Regression models (Random Forest, XGBoost).
     - Evaluating performance (RMSE, R²).
+     
+## Key Insights & Visualizations
+
+### 1. Daily Peak Exposure (Time-Series Analysis)
+We analyzed hourly pollution trends to identify periods of critical exposure. As seen below, pollutant levels fluctuate based on urban activity, providing actionable data for public health advisories.
+
+<div align="center">
+  <img src="images/exposure.png" alt="Time Series Plot" width="800"/>
+</div>
+
+### 2. Meteorological Impact on Air Quality (Correlation)
+The heatmap demonstrates the relationship between weather conditions and pollution. By applying physical constraints (e.g., wind dispersion) via Data Engineering, the predictive correlation of the final model reached **~92%**.
+
+<div align="center">
+  <img src="images/heatmap.png" alt="Correlation Heatmap" width="700"/>
+</div>
 
 ##  Contributing
 Contributions are welcome! If you have ideas for better feature engineering or new models:
